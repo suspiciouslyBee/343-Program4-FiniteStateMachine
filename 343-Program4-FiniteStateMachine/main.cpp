@@ -8,6 +8,7 @@ struct FSMNode {
   char output[4];
 };
 
+
 enum STATES {
   s1,
   ,

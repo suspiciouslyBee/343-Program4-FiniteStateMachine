@@ -25,10 +25,10 @@
 //Abstract State Interface
 class StateInterface {
   public:
-  virtual void One(StateInterface* state) = 0;
-  virtual void Two(StateInterface* state) = 0;
-  virtual void Add(StateInterface* state) = 0;
-  virtual void Multiply(StateInterface* state) = 0;
+  virtual void One(StateInterface*& state) = 0;
+  virtual void Two(StateInterface*& state) = 0;
+  virtual void Add(StateInterface*& state) = 0;
+  virtual void Multiply(StateInterface*& state) = 0;
   virtual std::string StateName() = 0;
 
   private:
@@ -37,13 +37,130 @@ class StateInterface {
 
 class Base : public StateInterface {
   public:
-  void One(StateInterface* state);
-  void Two(StateInterface* state);
-  void Add(StateInterface* state);
-  virtual void Multiply(StateInterface* state);
-  virtual std::string StateName();
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
   private:
-  
 };
+
+class OneState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+ private:
+};
+
+class TwoState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+ private:
+}; 
+
+class AddState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+
+ private:
+}; 
+
+class MultiplyState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+ private:
+};
+
+class OneOneState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+ private:
+};
+
+class OneTwoState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+
+ private:
+};
+
+class TwoTwoState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+
+ private:
+};
+
+class OneAddState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+ private:
+};
+
+class TwoAddState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+
+ private:
+};
+
+class OneMultiplyState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+
+ private:
+};
+
+class TwoMultiplyState : public StateInterface {
+ public:
+  void One(StateInterface*& state);
+  void Two(StateInterface*& state);
+  void Add(StateInterface*& state);
+  void Multiply(StateInterface*& state);
+  std::string StateName();
+
+ private:
+};
+
+
 
 #endif // STATE_H_

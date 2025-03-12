@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="343-Program4-FiniteStateMachine.cpp" />
+    <ClCompile Include="fsm.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="state.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsm.h" />
+    <ClInclude Include="fsmgraph.h" />
+    <ClInclude Include="fsmnode.h" />
+    <ClInclude Include="state.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

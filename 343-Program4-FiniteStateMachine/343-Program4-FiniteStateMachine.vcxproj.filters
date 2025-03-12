@@ -15,8 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="343-Program4-FiniteStateMachine.cpp">
+    <ClCompile Include="fsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fsmgraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fsmnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
