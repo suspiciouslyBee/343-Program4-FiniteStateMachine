@@ -3,18 +3,9 @@
 
 #include <iostream>
 
-struct FSMNode {
-  FSMNode* operators_[4];
-  char output[4];
-};
+#include "fsm.h"
 
-enum STATES {
-  s1,
-  ,
-  2
-};
-
-int main()
-{
-   
+int main() { 
+  FSM StateMachine;
+  StateMachine.BeginMachine();
 }
