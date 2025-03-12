@@ -16,8 +16,6 @@ class FSM {
 
   private:
   StateInterface* currentState_{nullptr};
-
-
 };
 
 #endif //FSM_H_
