@@ -18,7 +18,9 @@ FSM::FSM() {
 }
 
 void FSM::BeginMachine() {
-  while (true) {
+
+  bool exit = false;
+  while (exit == false) {
     // Display Current State
     // Prompt
     // Show result, repeat
@@ -27,7 +29,7 @@ void FSM::BeginMachine() {
     char selection = 0;
 
     std::cout << "Current State: " << currentState_->StateName() << std::endl;
-    std::cout << "Input Action (1, 2, +, x): ";
+    std::cout << "Input Action (1, 2, +, x), e to exit: ";
 
     std::cin >> selection;
 
@@ -45,6 +47,11 @@ void FSM::BeginMachine() {
         break;
       case 'x':
         currentState_->Multiply(currentState_);
+        break;
+      case 'e':
+        exit = true;
+        std::cout << "\rExiting..." << std::endl;
+        break;
       default:  // may introduce technically introduce a state
         std::cout << "\rInput not recognized, reloading state" << std::endl;
         break;
