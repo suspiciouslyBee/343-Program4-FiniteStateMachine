@@ -13,8 +13,14 @@
 //  get to mess with that in 342 due to the enforcement of the Google C++ Style
 //  guide, which heavily discourages inheritence.
 //  
-//  There are sources that I referred to to refresh myself on inheritence. Will
-//  link in the final README if I end up merging this branch
+//  There are sources that I referred to to refresh myself on inheritence: 
+//  Other than reference documents I loosely adapted some of the design on this
+//  example of a different FSM. I simplified it as I didn't need something as 
+//  modular, and I found the way that author was declaring singletons to be 
+//  rather unnecisary for the purpose of this program. My main purpose 
+//  referencing this source was refreshing my knowledge of inheritence, and this
+//  did the job.
+//  https://www.aleksandrhovhannisyan.com/blog/implementing-a-finite-state-machine-in-cpp/
 ////
 #ifndef STATE_H_
 #define STATE_H_
